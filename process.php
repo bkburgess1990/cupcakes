@@ -1,6 +1,8 @@
 <!--
 Author: Brandon Burgess, Adam Winter
-Date:
+Date: 2023-1-5
+URL:  https://bburgess.greenriverdev.com/SDEV328/cupcakes/
+Git:  https://github.com/bkburgess1990/cupcakes
 
 
 
