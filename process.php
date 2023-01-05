@@ -17,9 +17,14 @@ Date:
 </head>
 <body>
 <?php
-    if(!isset($_POST['name'])) {
+    if(empty($_POST['name'])) {
         echo "Please Enter a Name";
         exit();
+    }
+
+    if(sizeof($_POST) == 1){
+        echo "Please, choose at least one cupcake, you party pooper.";
+        exit;
     }
 
     var_dump($_POST);
@@ -29,13 +34,16 @@ Date:
 
     echo "Order Summary: ";
     echo "<ul>";
+    $totalCost = 0.0;
     $cupcakeNames = array("grass","whisk","carwal","sarcar","redvelv","lemdrop","tir");
     foreach ($cupcakeNames as $cupcakeName) {
         if(isset($_POST[$cupcakeName])) {
             echo "<li>" . $_POST[$cupcakeName] . "</li>";
+            $totalCost += 3.50;
         }
     }
     echo "</ul>";
+    echo "Total Cost: $" . $totalCost;
 ?>
 </body>
 </html>

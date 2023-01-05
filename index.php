@@ -23,7 +23,7 @@
         <input type="checkbox" value="Red Velvet" name="redvelv">Red Velvet</input><br>
         <input type="checkbox" value="Lemon Drop" name="lemdrop">Lemon Drop</input><br>
         <input type="checkbox" value="Tiramisu" name="tir">Tiramisu</input><br>
-        <button type="submit">Send that shit</button>
+        <button type="submit">Send that $#!*</button>
     </form>
 </body>
 </html>
