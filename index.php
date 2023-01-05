@@ -8,7 +8,18 @@
     <title>Cupcakes</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Pick Yo Cupcake</h1>
+
+    <form>
+        <input type="checkbox" value="The Grasshopper" name="grass">The Grasshopper</input><br>
+        <input type="checkbox" value="Whiskey Maple Bacon" name="whisk">Whiskey Maple Bacon</input><br>
+        <input type="checkbox" value="Carrot Walnut" name="carwal">Carrot Walnut</input><br>
+        <input type="checkbox" value="Salted Caramel" name="sarcar">Salted Caramel</input><br>
+        <input type="checkbox" value="Red Velvet" name="redvelv">Red Velvet</input><br>
+        <input type="checkbox" value="Lemon Drop" name="lemdrop">Lemon Drop</input><br>
+        <input type="checkbox" value="Tiramisu" name="tir">Tiramisu</input><br>
+        <button type="submit">Send that shit</button>
+    </form>
 </body>
 </html>
 
