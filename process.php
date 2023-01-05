@@ -1,6 +1,6 @@
 <!--
 Author: Brandon Burgess, Adam Winter
-Date:git status
+Date:
 
 
 
@@ -17,11 +17,25 @@ Date:git status
 </head>
 <body>
 <?php
+    if(!isset($_POST['name'])) {
+        echo "Please Enter a Name";
+        exit();
+    }
+
+    var_dump($_POST);
     echo "Thank you, " . $_POST['name'] . " for your order!";
     echo "<br><br>";
 
-    echo "Order Summary: ";
 
+    echo "Order Summary: ";
+    echo "<ul>";
+    $cupcakeNames = array("grass","whisk","carwal","sarcar","redvelv","lemdrop","tir");
+    foreach ($cupcakeNames as $cupcakeName) {
+        if(isset($_POST[$cupcakeName])) {
+            echo "<li>" . $_POST[$cupcakeName] . "</li>";
+        }
+    }
+    echo "</ul>";
 ?>
 </body>
 </html>
