@@ -9,7 +9,7 @@
 </head>
 <body>
 
-echo 'Brandon extended access to Adam in github for this repo, and this file was added on the other computer, then pushed from there.';
+echo 'Brandon extended access to Adam in Github for this repo, and this file was added on the other computer, then pushed from there.';
 
 
 </body>

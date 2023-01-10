@@ -1,11 +1,8 @@
 <!--
 Author: Brandon Burgess, Adam Winter
-Date: 2023-1-5
+Date: 2023-1-9
 URL:  https://bburgess.greenriverdev.com/SDEV328/cupcakes/
 Git:  https://github.com/bkburgess1990/cupcakes
-
-
-
 -->
 
 <!doctype html>
@@ -30,6 +27,7 @@ Git:  https://github.com/bkburgess1990/cupcakes
     }
 
     var_dump($_POST);
+    echo "<br><br>";
     echo "Thank you, " . $_POST['name'] . " for your order!";
     echo "<br><br>";
 
@@ -37,12 +35,9 @@ Git:  https://github.com/bkburgess1990/cupcakes
     echo "Order Summary: ";
     echo "<ul>";
     $totalCost = 0.0;
-    $cupcakeNames = array("grass","whisk","carwal","sarcar","redvelv","lemdrop","tir");
-    foreach ($cupcakeNames as $cupcakeName) {
-        if(isset($_POST[$cupcakeName])) {
-            echo "<li>" . $_POST[$cupcakeName] . "</li>";
+    foreach ($_POST["flavors"] as $cupcakeName) {
+            echo "<li>" . $cupcakeName . "</li>";
             $totalCost += 3.50;
-        }
     }
     echo "</ul>";
     echo "Total Cost: $" . $totalCost;
